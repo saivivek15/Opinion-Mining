@@ -9,14 +9,21 @@ Start elastic search and kibana (Installed using Homebrew for macOS)
 
 
 Execute:
+
  -python producer.py
+ 
  -spark-submit --packages org.apache.spark:spark-streaming-kafka-0-8_2.11:2.1.0 consumer.py localhost:2181 tweets
-	
+ 
+ 
 Inspect:
- 	- https://localhost:5601
-	- Create an index pattern in kibana
-	- In visualize, select SUM for fields positive, negative and neutral.
-	- Save visualization
-	- In dashboard, create a dashboard and set auto-refresh time for 1 minute.
+- https://localhost:5601
+
+- Create an index pattern in kibana
+
+- In visualize, select SUM for fields positive, negative and neutral.
+
+- Save visualization
+
+- In dashboard, create a dashboard and set auto-refresh time for 1 minute.
 	
 
